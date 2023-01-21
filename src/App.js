@@ -6,7 +6,8 @@ import Modal from "./components/modal/Modal";
 const App = () => {
   return (
     <div className="App">
-      
+      <TextBox style="input" />
+      <TextBox style="output" />
     </div>
   );
 }
