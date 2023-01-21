@@ -1,13 +1,23 @@
+import { useEffect, useState } from "react";
+
 import TextBox from "./components/text-box/TextBox";
 import Arrows from "./components/arrows/Arrows";
 import Button from "./components/button/Button";
 import Modal from "./components/modal/Modal";
 
 const App = () => {
+  const [inputLanguage, setInputLanguage] = useState("Turkish");
+  const [outputLanguage, setOutputLanguage] = useState("English");
+
+  const handleClick = () => {
+    setInputLanguage(outputLanguage);
+    setOutputLanguage(inputLanguage);
+  };
+
   return (
     <div className="App">
       <TextBox style="input" />
-      <div className="arrow-container">
+      <div className="arrow-container" onClick={handleClick}>
         <Arrows />
       </div>
       <TextBox style="output" />
