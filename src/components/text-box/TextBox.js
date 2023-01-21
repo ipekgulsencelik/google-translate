@@ -2,10 +2,10 @@ import "./style.css";
 
 import DropDown from "../drop-down/DropDown";
 
-const TextBox = ({ style }) => {
+const TextBox = ({ selectedLanguage, style }) => {
   return (
     <div className={style}>
-      <DropDown />
+      <DropDown selectedLanguage={selectedLanguage} />
       <textarea
         placeholder={style === "input" ? "Enter Text" : "Translation"}
         disabled={style === "output"}

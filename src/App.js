@@ -16,11 +16,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <TextBox style="input" />
+      <TextBox selectedLanguage={inputLanguage} style="input" />
       <div className="arrow-container" onClick={handleClick}>
         <Arrows />
       </div>
-      <TextBox style="output" />
+      <TextBox selectedLanguage={outputLanguage} style="output" />
     </div>
   );
 };
