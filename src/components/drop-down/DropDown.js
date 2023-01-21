@@ -1,8 +1,8 @@
 import "./style.css";
 
-const DropDown = ({ selectedLanguage }) => {
+const DropDown = ({ style, setShowModal, selectedLanguage }) => {
   return (
-    <div className="select-drop-down">
+    <div className="select-drop-down" onClick={() => setShowModal(style)}>
       <input value={selectedLanguage} />
 
       <div className="down-arrow">
