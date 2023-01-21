@@ -11,6 +11,11 @@ const Modal = ({ setShowModal, languages }) => {
     setSearchedLanguage(e.target.value);
   };
 
+  const handleClick = (e) => {
+    // setChosenLanguage(e.target.textContent);
+    setShowModal(null);
+  };
+
   return (
     <div className="option-list">
       <div className="search-bar">
@@ -33,7 +38,7 @@ const Modal = ({ setShowModal, languages }) => {
                 {/* {chosenLanguage === filteredLanguage ? "✓" : ""} */}
               </div>
               <li
-                // onClick={handleClick}
+                onClick={handleClick}
                 // style={{color: chosenLanguage === filteredLanguage ? "#8ab4f8" : null}}
               >
                 {filteredLanguage}
