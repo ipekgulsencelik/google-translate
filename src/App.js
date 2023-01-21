@@ -35,7 +35,7 @@ const App = () => {
           />
         </>
       )}
-      {showModal && <Modal />}
+      {showModal && <Modal setShowModal={setShowModal} />}
     </div>
   );
 };
