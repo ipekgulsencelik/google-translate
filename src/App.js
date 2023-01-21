@@ -7,9 +7,12 @@ const App = () => {
   return (
     <div className="App">
       <TextBox style="input" />
+      <div className="arrow-container">
+        <Arrows />
+      </div>
       <TextBox style="output" />
     </div>
   );
-}
+};
 
 export default App;
